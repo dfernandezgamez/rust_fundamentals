@@ -8,4 +8,10 @@ fn main() {
     let (name,latitude,longitude) = location;
     
     println!("Location name: {}, latitude {}, longitude {}",name,latitude,longitude);
+
+    //differences between String (mutable & heap) and String Slice (unmutable & heap,stack or embedded)
+    let person_name_slice = "David Fernandez";
+    let person_name_string = person_name_slice.to_string();
+    let person_name_string2 = String::from("David Fernandez");
+    let person_name_slice2 = person_name_string2.as_str();
 }
