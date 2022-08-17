@@ -14,4 +14,10 @@ fn main() {
     let person_name_string = person_name_slice.to_string();
     let person_name_string2 = String::from("David Fernandez");
     let person_name_slice2 = person_name_string2.as_str();
+
+    //String concatenation
+    let duck="Duck";
+    let airlines="Airlines";
+    let airlines_name= [duck,airlines].concat();
+    let airlines_name2=format!("{}{}",duck,airlines);
 }
