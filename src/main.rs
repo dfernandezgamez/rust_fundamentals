@@ -15,9 +15,15 @@ fn main() {
     let person_name_string2 = String::from("David Fernandez");
     let person_name_slice2 = person_name_string2.as_str();
 
-    //String concatenation
+    //String concatination
     let duck="Duck";
     let airlines="Airlines";
     let airlines_name= [duck,airlines].concat();
     let airlines_name2=format!("{}{}",duck,airlines);
+
+    let mut slogan =String::new();
+    slogan.push_str("We are amazing!");
+    slogan.push(' ');
+    slogan = slogan + "fucking amazing.";
+    println!("{}",slogan);
 }
